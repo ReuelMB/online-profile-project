@@ -14,9 +14,9 @@ export default function About() {
           </a>
           <p className="text-gray-500">Baguio City, Philippines</p>
         </div>
-        <button className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black">
-          Download CV
-        </button>
+        <a href="/online-profile-project/files/Resume.pdf" download="Resume" className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black">
+          Download Resume
+        </a>
       </div>
       <div className="flex-1 bg-gradient-to-br from-slate-50 to-blue-500 shadow-xl flex justify-end">
         <img src="/online-profile-project/about_section_photo.png" alt="About Profile Photo" />

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="rounded-full p-2 mt-10">
-        <img className="h-10 invert" src="/logo_svg.svg" alt="logo" />
+        <img className="h-10 invert" src="/online-profile-project/logo_svg.svg" alt="logo" />
       </div>
       <SocialMediaLinks dark={false} />
       <p className="mt-6 text-gray-500">

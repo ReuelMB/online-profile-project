@@ -14,7 +14,7 @@ export default function ExpirienceCard(props) {
             <div className="relative w-full">
               <img
                 className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7"
-                src="/check.svg"
+                src="/online-profile-project/check.svg"
                 alt="Check Icon"
               />
               <div className="ml-6">

@@ -100,7 +100,7 @@ export default function NavigationBar({ navLinks }) {
       <nav className="flex items-center p-5">
         <div className="flex-1">
           <a href="#">
-            <img className="h-10" src="/logo_svg.svg" alt="logo" />
+            <img className="h-10" src="/online-profile-project/logo_svg.svg" alt="logo" />
           </a>
         </div>
         <div className="text-gray-700 md:hidden">

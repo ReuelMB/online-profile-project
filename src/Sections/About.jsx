@@ -19,7 +19,7 @@ export default function About() {
         </button>
       </div>
       <div className="flex-1 bg-gradient-to-br from-slate-50 to-blue-500 shadow-xl flex justify-end">
-        <img src="/about_section_photo.png" alt="About Profile Photo" />
+        <img src="/online-profile-project/about_section_photo.png" alt="About Profile Photo" />
       </div>
     </div>
   );

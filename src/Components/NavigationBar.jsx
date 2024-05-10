@@ -1,10 +1,8 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { sendEmailClicked } from "../Utils/Utils";
-import ContactForm from "../Sections/ContactFormContent";
-import Button from "./Button";
 import Modal from "./Modal";
+import { ContactMeForm } from "../Forms";
 
 export default function NavigationBar({ navLinks }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,7 +11,6 @@ export default function NavigationBar({ navLinks }) {
     transparent: true,
   });
   const [isOpen, setIsOpen] = useState(false);
-  const contactForm = useRef();
 
   function closeModal() {
     setIsOpen(false);
@@ -184,21 +181,7 @@ export default function NavigationBar({ navLinks }) {
           "This will send me an email with the information you provided in the form."
         }
       >
-        <form
-          ref={contactForm}
-          onSubmit={(e) => sendEmailClicked(e, contactForm, closeModal)}
-        >
-          <ContactForm />
-          <div className="flex flex-row items-center justify-center">
-            <Button
-              type="button"
-              label="Cancel"
-              onClick={closeModal}
-              variant="secondary"
-            />
-            <Button type="submit" label="Send" variant="primary" />
-          </div>
-        </form>
+        <ContactMeForm callBack={closeModal}/>
       </Modal>
     </header>
   );

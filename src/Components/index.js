@@ -1,5 +1,5 @@
 import Button from "./Button";
-import FormInput from "./FormInput";
+import FormField from "./FormField";
 import Modal from "./Modal";
 import Link from "./Link";
 
@@ -11,7 +11,7 @@ import ProjectCard from "./ProjectCard";
 
 export {
     Button,
-    FormInput,
+    FormField,
     Modal,
     Link,
     SectionHead,

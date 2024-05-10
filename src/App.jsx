@@ -49,19 +49,19 @@ function App() {
       >
         <HeroBanner />
       </section>
-      <section id="about" ref={aboutRef}>
+      <section id="about" ref={aboutRef} className="min-h-dvh">
         <About />
       </section>
-      <section id="expirience" ref={expirienceRef} className="bg-gray-100">
+      <section id="expirience" ref={expirienceRef} className="bg-gray-100 min-h-dvh">
         <Expirience />
       </section>
-      <section id="portfolio" ref={portfolioRef}>
+      <section id="portfolio" ref={portfolioRef} className="min-h-dvh">
         <Portfolio />
       </section>
-      <section id="testimonials" ref={testimonialsRef} className="bg-gray-100">
+      <section id="testimonials" ref={testimonialsRef} className="bg-gray-100 min-h-dvh">
         <Testimonials />
       </section>
-      <section id="contactMe" ref={contactMeRef} className="md:hidden">
+      <section id="contactMe" ref={contactMeRef} className="md:hidden min-h-dvh">
         <ContactMe />
       </section>
       <section className="bg-black">
